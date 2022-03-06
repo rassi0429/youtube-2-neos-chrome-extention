@@ -18,8 +18,6 @@ console.log(
 );
 let socket = null
 
-connectWS("ciel")
-
 function connectWS(uniqueId) {
   socket = new WebSocket("wss://wsecho.kokoa.dev/kokoa0429/yt2neos/" + uniqueId)
   socket.addEventListener('message', function (event) {
